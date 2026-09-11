@@ -62,3 +62,35 @@ This lab covers the core GitHub delivery workflow:
 - Merging changes back into `main` via a pull request
 
 This branch → pull request → merge cycle reflects a standard collaborative development workflow used in real-world software delivery.
+
+---
+
+# Activity 2 — Build a Simple CI/CD Pipeline
+
+## Part 1: Implement a Simple CI/CD Pipeline
+
+1. Navigate to the repository's **Settings**.
+2. In the left panel, under **Actions**, click **General**.
+3. Scroll down to **Workflow permissions**:
+   - Select **Read and write permissions**.
+   - Check the box **Allow GitHub Actions to create and approve pull requests**.
+4. Click **Save**.
+5. After forking the repository successfully, check whether the workflow was executed automatically.
+   - If not, make a small edit (such as adding a file) to trigger it.
+   - Go to the **Actions** tab to observe the workflow run.
+6. Navigate to **Settings** again, and from the left panel select **Pages**.
+7. Under **Build and deployment**:
+   - Select **Deploy from a branch**.
+   - Under **Branch**, choose `gh-pages` and the `/docs` folder.
+   - Click **Save**.
+8. After a few minutes, GitHub will generate your site URL.
+9. Click **Visit site** to view the deployed website.
+
+## Summary
+
+This activity demonstrates a basic CI/CD workflow using GitHub Actions and GitHub Pages:
+- Configuring workflow permissions so GitHub Actions can create and approve pull requests
+- Triggering and verifying an automated workflow run via the **Actions** tab
+- Deploying a static site automatically from the `gh-pages` branch using GitHub Pages
+
+Together, these steps show how code changes can be automatically built, verified, and deployed — the foundation of a continuous integration and continuous deployment (CI/CD) pipeline.
